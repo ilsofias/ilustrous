@@ -9,18 +9,11 @@ const Stack = createNativeStackNavigator();
 export default function App() {
   return (
     <NavigationContainer>
-    <Stack.Navigator initialRouteName="LandingPage">
-      <Stack.Screen name="LandingPage" component={LandingPage} />
-    </Stack.Navigator>
+      <Stack.Navigator initialRouteName="LandingPage"  screenOptions={{ headerShown: false }}>
+        <Stack.Screen name="LandingPage" component={LandingPage} />
+      </Stack.Navigator>
     </NavigationContainer>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center",
-  },
-});
+
