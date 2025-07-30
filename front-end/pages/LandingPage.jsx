@@ -1,10 +1,11 @@
 import { StyleSheet, Text, View } from "react-native";
+import { SafeAreaView } from 'react-native-safe-area-context';
 
-export default function App() {
+export default function LandingPage() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-    </View>
+    <SafeAreaView>
+      <Text>Landing Page</Text>
+    </SafeAreaView>
   );
 }
 
