@@ -17,6 +17,7 @@ const landingP = StyleSheet.create({
     shadowOffset: { width: 0, height: 0 }, 
     shadowOpacity: 55, 
     shadowRadius: 20,
+    
   },
   headline:{
     fontSize:100,
@@ -57,25 +58,45 @@ const landingP = StyleSheet.create({
     flexDirection: 'column',
     justifyContent: 'space-evenly',
     alignItems: 'center',
-    backgroundColor: '#FFF5E4',
+    backgroundColor: '#fffdfaff',
     padding: 20,
   },
   gridContainer:{
     display: 'flex',
     flexDirection: 'row',
     justifyContent: 'space-around',
-    gap: 50,
+    gap: 40,
+    marginTop: 20,
+    width: '100%',
+    height: 'auto',
   },
   gridImg:{
     width: 400,
     height: 300,
     margin: 20,
-    shadowColor: '#000',
-    shadowOffset: { width: 0, height: 2 },
+    shadowColor: 'black',
+    shadowOffset: { width: 5, height: 10 },
     shadowOpacity: 0.3,
-    shadowRadius: 4,
-  }
+    shadowRadius: 10,
+  },
 
+  //divider
+  dividerLine: {
+    backgroundColor:'#fffdfaff',
+    width: '100%',
+    height: 20,  
+    display: 'flex',
+    flexDirection: 'row',
+    justifyContent: 'space-between  ',
+    alignItems: 'center',
+    paddingHorizontal: 90,
+    paddingVertical: 20,
+  },
+  dividerLineText: {
+    fontSize: 25,
+    color:'#e26d7bff',
+    fontWeight: 'bold',
+    }
 
 });
 

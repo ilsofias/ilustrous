@@ -3,7 +3,7 @@ import { StyleSheet } from "react-native";
 const navB = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#FFF5E4",
+    backgroundColor: "#fffdfaff",
     display: 'flex',
     flexDirection: 'row',
     height:30,
