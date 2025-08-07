@@ -96,7 +96,17 @@ const landingP = StyleSheet.create({
     fontSize: 25,
     color:'#e26d7bff',
     fontWeight: 'bold',
-    }
+    },
+
+    container3: {
+    flexDirection: 'row',
+    justifyContent: 'space-around',
+    alignItems: 'flex-start',
+    padding: 16,
+    backgroundColor: '#fffdfaff',
+    width: '100%',
+  }
+
 
 });
 

@@ -2,10 +2,15 @@ import { ScrollView, TouchableOpacity, Text, View, Image, ImageBackground } from
 import { SafeAreaView } from 'react-native-safe-area-context';
 import landingP from "../styles/landingP";
 import NavBar from "../components/NavBar";
+import ProductCard from "../components/ProductCard";
 import '../assets/MAIN.png'
 import '../assets/FACE CARE.png';
 import '../assets/BODY CARE.png';
 import '../assets/PRODUCTS.png'
+import '../assets/elixir.png';
+import '../assets/rsilk.png';
+import '../assets/LUXE-RADIANCE.png';
+import '../assets/FLORAL.png'
 
 
 export default function LandingPage() {
@@ -85,8 +90,36 @@ export default function LandingPage() {
         <TouchableOpacity>
           <Text style={landingP.dividerLineText}>SEE MORE  {'\u2192'} </Text>
         </TouchableOpacity>
-        
       </View> 
+
+      <View style={landingP.container3}>
+        <ProductCard
+        imageSource={require('../assets/elixir.png')}
+        title="LUSTRE ELIXIR"
+        description="30 ML FACE SERUM"
+        price="1,500"
+        onAddToCart={() => console.log('Added Lustre Elixir')}
+      />
+      <ProductCard
+        imageSource={require('../assets/rsilk.png')}
+        title="RADIANT SILK"
+        description="50 ML FACE MOISTURIZER"
+        price="1,200"
+        onAddToCart={() => console.log('Added Radiant Silk')}
+      />
+      <ProductCard
+        imageSource={require('../assets/LUXE-RADIANCE.png')}
+        title="LUXE RADIANCE OIL"
+        description="30 ML BODY OIL"
+        price="1,000"
+        onAddToCart={() => console.log('Added Luxe Radiance Oil')}
+      />
+        
+      </View>    
+
+      <View>
+          <Image source={require('../assets/FLORAL.png')} style={[landingP.glow, {marginLeft:-50, marginTop: 20}]}/>
+      </View>
 
 
       </ScrollView>
