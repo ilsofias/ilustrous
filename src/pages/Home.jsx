@@ -13,10 +13,8 @@ import value from "../img/value.png";
 function Home() {
   return (
     <>
-      {/* NAVBAR */}
       <header className="flex items-center justify-between px-4 py-4 bg-cream">
         <div className="flex items-center space-x-2">
-          {/* Logo placeholder */}
           <div className="w-10 h-10 rounded-full ">
             <img src={logo} alt="logo"></img>
           </div>
@@ -38,7 +36,6 @@ function Home() {
         </nav>
       </header>
 
-      {/* FIRST DIVIDER */}
       <section className="w-full bg-powder-navy text-cream text-center md:text-left md:flex md:items-center">
         <div className="relative flex justify-center w-full min-h-[180px] sm:min-h-[220px] md:w-1/2 md:min-h-[300px] xl:min-h-[400px] pt-0 lg:pt-16 xl:pt-24">
           <img
@@ -57,9 +54,7 @@ function Home() {
           </p>
         </div>
       </section>
-      {/* FIRST DIVIDER */}
 
-      {/* MOST LOVED */}
       <div>
         <img
           src={flowers}
@@ -78,7 +73,6 @@ function Home() {
             </a>
           </div>
 
-          {/* PRODUCTS */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
             <div className="bg-powder-denim p-4 shadow text-center relative flex flex-col items-center">
               <img
@@ -132,9 +126,7 @@ function Home() {
           </div>
         </section>
       </div>
-      {/* MOST LOVED */}
 
-      {/* CATEGORY */}
       <section className="py-10 px-4 grid grid-cols-1 md:grid-cols-3 gap-4">
         <div className="relative w-full h-60 bg-gray-300 rounded flex items-center justify-center overflow-hidden">
           <img
@@ -167,9 +159,7 @@ function Home() {
           </span>
         </div>
       </section>
-      {/* CATEGORY */}
 
-      {/* DISCOUNT BANNER */}
       <section className="text-black text-center py-6 px-4">
         <h2 className="text-3xl font-bold tracking-[0.82em]">
           15% OFF FOR FIRST TIME BUYERS!
@@ -179,7 +169,6 @@ function Home() {
         </p>
       </section>
 
-      {/* FOOTER */}
       <footer className="bg-powder-denim text-cream tracking-wide px-4 py-8 text-center md:text-left md:grid md:grid-cols-3 gap-6">
         <div>
           <h3 className="font-bold mb-2">Connect with us:</h3>
@@ -194,7 +183,7 @@ function Home() {
           <img className="w-30 h-30" src={logo}></img>
         </div>
 
-        <div>
+        <div className="text-right">
           <h3 className="font-bold mb-2">Contact us:</h3>
           <ul className="space-y-1 text-sm">
             <li>Sofia Ilustre</li>

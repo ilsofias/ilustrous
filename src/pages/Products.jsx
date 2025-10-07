@@ -16,7 +16,6 @@ import cruelty from "../img/cruelty-free.png";
 export default function ProductsPage() {
   return (
     <div>
-      {/* NAVBAR */}
       <header className="flex items-center justify-between px-4 py-4 bg-cream">
         <div className="flex items-center space-x-2">
           {/* Logo placeholder */}
@@ -41,7 +40,6 @@ export default function ProductsPage() {
         </nav>
       </header>
 
-      {/* FIRST DIVIDER */}
       <section className="grid grid-cols-1 md:grid-cols-2 bg-dark-navy text-cream ">
         <div className="flex flex-col justify-center px-6 py-10">
           <h1 className="text-2xl md:text-4xl font-bold mb-4 tracking-[0.1em]">
@@ -59,7 +57,6 @@ export default function ProductsPage() {
         <img src={scrub} className="w-full object-cover block"></img>
       </section>
 
-      {/* SIDE BAR??*/}
       <section className="relative px-6 py-10 ">
         <img
           src={flowers}
@@ -74,7 +71,6 @@ export default function ProductsPage() {
             <img className="w-20 h-20" src={derma}></img>
           </div>
 
-          {/* FACE CARE*/}
           <div className="md:col-span-3">
             <h2 className="text-3xl font-bold text-center md:text-left mb-6 text-dark-navy">
               face care
@@ -156,7 +152,6 @@ export default function ProductsPage() {
         </div>
       </section>
 
-      {/* BODY CARE */}
       <section className="px-6 py-10">
         <h2 className="text-3xl font-bold text-center md:text-left mb-6 text-dark-navy">
           body care
@@ -217,7 +212,6 @@ export default function ProductsPage() {
         </div>
       </section>
 
-      {/* FOOTER */}
       <footer className="bg-powder-denim text-cream tracking-wide px-4 py-8 text-center md:text-left md:grid md:grid-cols-3 gap-6">
         <div>
           <h3 className="font-bold mb-2">Connect with us:</h3>
@@ -232,7 +226,7 @@ export default function ProductsPage() {
           <img className="w-30 h-30" src={logo}></img>
         </div>
 
-        <div>
+        <div className="text-right">
           <h3 className="font-bold mb-2">Contact us:</h3>
           <ul className="space-y-1 text-sm">
             <li>Sofia Ilustre</li>

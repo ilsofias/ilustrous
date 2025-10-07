@@ -18,7 +18,6 @@ export default function AboutPage() {
       })
       .then(
         () => {
-          // Clear input fields after successful send
           form.current.reset();
           console.log("Email sent Successfully!");
         },
@@ -34,10 +33,9 @@ export default function AboutPage() {
         src={flowers}
         className="fixed top-0 left-0 w-full h-full object-cover -z-10"
       />
-      {/* HEADER */}
+
       <header className="flex items-center justify-between px-4 py-4 bg-cream">
         <div className="flex items-center space-x-2">
-          {/* Logo placeholder */}
           <div className="w-10 h-10 rounded-full ">
             <img src={logo} alt="logo"></img>
           </div>
@@ -48,7 +46,7 @@ export default function AboutPage() {
             </span>
           </div>
         </div>
-        {/* Hamburger icon as PNG placeholder */}
+
         <div className="w-10 h-10  md:hidden rounded-sm justify-center items-center flex">
           <img src={menu} alt="menu logo" />
         </div>
@@ -60,7 +58,6 @@ export default function AboutPage() {
         </nav>
       </header>
 
-      {/* FIRST DIVIDER*/}
       <section className=" text-center py-10 px-4">
         <h1 className="text-3xl md:text-5xl font-bold tracking-wide">
           nurture your <br className="hidden md:block" /> natural brilliance
@@ -75,9 +72,7 @@ export default function AboutPage() {
           glow, you shine.
         </p>
       </section>
-      {/* FIRST DIVIDER*/}
 
-      {/* GRIDS */}
       <section className="grid grid-cols-1 md:grid-cols-2 gap-0">
         <div className="w-full">
           <img
@@ -195,7 +190,6 @@ export default function AboutPage() {
         </button>
       </form>
 
-      {/* FOOTER */}
       <footer className="bg-powder-denim text-cream tracking-wide px-4 py-8 text-center md:text-left md:grid md:grid-cols-3 gap-6">
         <div>
           <h3 className="font-bold mb-2">Connect with us:</h3>
@@ -210,7 +204,7 @@ export default function AboutPage() {
           <img className="w-30 h-30" src={logo}></img>
         </div>
 
-        <div>
+        <div className="text-right">
           <h3 className="font-bold mb-2">Contact us:</h3>
           <ul className="space-y-1 text-sm">
             <li>Sofia Ilustre</li>

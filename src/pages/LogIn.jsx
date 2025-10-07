@@ -18,7 +18,6 @@ export default function LogIn() {
     const email = form.current.user_email.value;
     const password = form.current.user_password.value;
 
-    // Save credentials to localStorage
     localStorage.setItem(
       "ilustrousUser",
       JSON.stringify({ name, email, password })
@@ -72,6 +71,13 @@ export default function LogIn() {
           </div>
         </div>
       </header>
+
+      <button
+        className="absolute top-6 left-6 bg-powder-denim text-cream font-bold px-4 py-2 rounded-full hover:bg-dark-navy transition"
+        onClick={() => navigate("/")}
+      >
+        GO BACK
+      </button>
 
       <div className="w-full max-w-md bg-white bg-opacity-90 rounded-lg shadow-lg p-8 flex flex-col gap-4">
         <h2 className="text-2xl font-bold text-center mb-2">
@@ -146,7 +152,6 @@ export default function LogIn() {
         </div>
       </div>
 
-      {/* Only show popup after sign up */}
       {!isLogin && showPopup && (
         <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-40 z-50">
           <div className="bg-white rounded-lg shadow-lg p-8 text-center">
